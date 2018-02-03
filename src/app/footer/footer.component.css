@@ -1,0 +1,22 @@
+.footer{
+    background: #2d2a3f
+}
+
+.container{
+   
+}
+
+.logo-img{
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+img{
+    width: 100%
+}
+
+p{
+    color: white;
+    margin: 0;
+    font-size: 11px
+}

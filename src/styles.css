@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face{
+    font-family: 'Myriad-Pro';
+    src: url('/assets/fonts/Myriad_Pro_Regular.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Raleway-SemiBold';
+    src: url('/assets/fonts/Raleway-SemiBold.ttf') format('truetype')
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", 'Raleway-SemiBold', Sans-Serif;
+    font-size: 20px;
+    background-color: #ededf4
+}
+  
+.title{
+    text-align: center;
+    background: #242038;
+    border: 2px solid #b68fc8;
+    color: white;
+    padding: 16px 0
+}
+
+h1{
+    font-size: 28px;
+    font-family: 'Myriad-Pro';
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}

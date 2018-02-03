@@ -1,0 +1,98 @@
+ header nav {
+    text-align: right;
+    
+    background: rgba(194,125,226,0.75);
+    color: white;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 99999
+  }
+  header nav a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2em 1em .5em;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+  }
+
+  .small {
+    padding: 1rem 1em !important;
+  }
+
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    background: rgba(255,255,255,0.3);
+  }
+  
+  .button {
+    text-align: center;
+  }
+  .button a {
+    display: inline-block;
+    border: 2px solid #777;
+    padding: .75em 1.5em;
+    color: #777;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: .15em;
+    word-spacing: .25em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  .button a:hover {
+    color: #FFFAF0;
+    background: #777;
+  }
+  footer.info {
+    color: #FFFAF0;
+    background: #777;
+    padding: 0 auto;
+    text-align: center;
+  }
+  
+  #toTop img {
+    width: 50px;
+  }
+
+  #toTop img:hover {
+    cursor: pointer;
+  }
+
+  nav img {
+    z-index: 1000;
+    height: 2.5em;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    transition: all 0.5s linear;
+  }
+  
+  .move {
+    top: -60px !important;
+  }
+  
+  nav span {
+    position: absolute;
+    left: 40px;
+    top: 1px;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+  }
+
+  nav span .logo_text{
+      top:1px !important;
+      left: 0px !important
+  }
+  
+  .movetext {
+    top: -75px !important;
+    
+  }
