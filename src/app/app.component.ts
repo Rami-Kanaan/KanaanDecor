@@ -23,7 +23,7 @@ export class AppComponent {
   onWindowScroll() {
     const offset = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
     if (offset > 355) {
-      console.log(offset);
+      //console.log(offset);
       this.isSmall = true;
       this.move = true;
       this.moveText = false

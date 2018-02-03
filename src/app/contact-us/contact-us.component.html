@@ -14,7 +14,7 @@
       </div>
       <div class="col-md-6">
         <h3>Get in Touch</h3>
-        <form action="">
+        <form [formGroup]="contactForm" action="mailto:kanaan95@live.com" method="post" enctype="text/plain" >
 
           <div class="form-group">
             <div class="input-group mb-3">
@@ -23,7 +23,8 @@
                   <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" id="name" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1" required>
+              <input type="text" class="form-control" formControlName="name" [(ngModel)]="contactInfo.name" id="name" placeholder="Name"
+                aria-label="Name" aria-describedby="basic-addon1" required>
             </div>
           </div>
 
@@ -34,8 +35,8 @@
                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"
-                required>
+              <input type="text" class="form-control" formControlName="email" [(ngModel)]="contactInfo.email" id="email" placeholder="Email"
+                aria-label="Email" aria-describedby="basic-addon1" required>
             </div>
           </div>
 
@@ -46,8 +47,8 @@
                   <i class="fa fa-phone" aria-hidden="true"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" id="phone" placeholder="Phone Number" aria-label="Phone" aria-describedby="basic-addon1"
-                required>
+              <input type="text" class="form-control" formControlName="phone" [(ngModel)]="contactInfo.phone" id="phone" placeholder="Phone Number"
+                aria-label="Phone" aria-describedby="basic-addon1">
             </div>
           </div>
 
@@ -56,12 +57,16 @@
               <span class="input-group-text">
                 <i class="fa fa-weixin" aria-hidden="true"></i>
               </span>
-              <textarea class="form-control" id="message" formControlName="message" rows="5" style="height:100%" placeholder="Your Message"
-                required></textarea>
+              <textarea class="form-control" id="message" formControlName="message" [(ngModel)]="contactInfo.message" rows="5" style="height:100%"
+                placeholder="Your Message" required></textarea>
               <!-- <input type="text" class="form-control" id="name" formControl="name" placeholder="Name" required> -->
 
             </div>
           </div>
+          <div class="pull-right">
+            <input type="submit" class="btn btn-outline-success" value="Send" > 
+          </div>
+
 
         </form>
       </div>
@@ -84,7 +89,7 @@
           <li style="margin-top:5px">
             <img src="assets/images/facebook_logo_button.png" alt="">
             <span style="margin-left: 10px; vertical-align:middle">
-              <a style="font-size: 22px"> facebook.com/KanaanDe </a>
+              <a target="_blank" (click)="goToFacebook()" style="font-size: 22px;"> facebook.com/KanaanDe </a>
             </span>
           </li>
         </ul>

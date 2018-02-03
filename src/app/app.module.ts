@@ -10,7 +10,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { HttpModule} from '@angular/http'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,11 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    HttpModule
+
   ],
   providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]
